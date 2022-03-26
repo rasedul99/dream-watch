@@ -7,3 +7,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
 }
+.cart {
+  /* background: #c8c3c2; */
+}
+.cart li {
+  list-style: none;
+  padding: 10px;
+  border: 2px solid #c8c3c2;
+  border-radius: 10px;
+  margin: 5px 0;
+}
