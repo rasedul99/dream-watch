@@ -3,7 +3,7 @@ import "./AboutReact.css";
 
 const AboutReact = () => {
   return (
-    <div>
+    <div className="Qna-container">
       <h2>Questions And Answer</h2>
 
       <h3>How does react works ?</h3>
@@ -17,7 +17,7 @@ const AboutReact = () => {
         fast and popular among the developers
       </p>
 
-      <h3>how does usestate works </h3>
+      <h3>how does usestate works ? </h3>
       <p>
         Ans : useState is a Hook that allows developer to have state variables
         in functional components. It can store value, objects in an array. Use

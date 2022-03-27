@@ -5,8 +5,8 @@ import "./Products.css";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
-  console.log(typeof cart);
   const [random, setRandom] = useState([]);
+
   const handleRandomProduct = () => {
     const randomProduct = cart[Math.floor(Math.random() * cart.length)];
     console.log(typeof randomProduct);
@@ -45,13 +45,13 @@ const Products = () => {
           </li>
         ))}
         <button onClick={handleRandomProduct}>
-          <p>Chosse one Randomly</p>
+          <p className="random-text">Chosse one for me</p>
         </button>
         {Object.keys(random).length > 0 && <li>{random.name}</li>}
 
         <br />
         <button onClick={handleClear}>
-          <p>Choose again</p>{" "}
+          <p className="clear-text">Choose again</p>{" "}
         </button>
       </div>
     </div>

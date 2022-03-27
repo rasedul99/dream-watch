@@ -7,14 +7,33 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
 }
-
+.cart {
+  width: 80%;
+  margin: 0 auto;
+}
 .cart h4 {
   text-align: center;
 }
 .cart li {
   list-style: none;
-  padding: 10px;
+  padding: 5px;
   border: 2px solid #c8c3c2;
   border-radius: 10px;
   margin: 5px 0;
+}
+.random-text {
+  color: green;
+}
+.clear-text {
+  color: #e20cde;
+}
+@media screen and (max-width: 376px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
 }
