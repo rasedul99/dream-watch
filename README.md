@@ -1,6 +1,4 @@
-# Getting Started with Create React App
+# Dream Watch
 
-# Watch sore
-
-**Live Link**
-[Watch store](https://www.google.com)
+**Took your favorite Watch**
+[Click Here to see Live ](https://dream-watch.netlify.app/)
