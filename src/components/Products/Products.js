@@ -5,10 +5,11 @@ import "./Products.css";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  console.log(typeof cart);
   const [random, setRandom] = useState([]);
   const handleRandomProduct = () => {
     const randomProduct = cart[Math.floor(Math.random() * cart.length)];
-    console.log(randomProduct);
+    console.log(typeof randomProduct);
     setRandom(randomProduct);
   };
 
@@ -40,14 +41,13 @@ const Products = () => {
         <h4>Select Watch</h4>
         {cart.map((product) => (
           <li className="cart-list" key={product.id}>
-            {" "}
-            {product.name}{" "}
+            {product.name}
           </li>
         ))}
         <button onClick={handleRandomProduct}>
           <p>Chosse one Randomly</p>
         </button>
-        {<li>{random.name}</li>}
+        {Object.keys(random).length > 0 && <li>{random.name}</li>}
 
         <br />
         <button onClick={handleClear}>

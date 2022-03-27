@@ -7,8 +7,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
 }
-.cart {
-  /* background: #c8c3c2; */
+
+.cart h4 {
+  text-align: center;
 }
 .cart li {
   list-style: none;
